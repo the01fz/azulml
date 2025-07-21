@@ -1898,20 +1898,19 @@
   Comprar agora
 </button>
 
+<!-- O botão -->
+<button id="d7c80d95-5099-2296-86de-3c8c8aa8edab">Comprar agora</button>
+
+<!-- O script -->
 <script>
   document.getElementById("d7c80d95-5099-2296-86de-3c8c8aa8edab").addEventListener("click", function () {
     const baseUrl = "https://pay.acessounico.cloud/RmA83Eamxmw3PVp";
-
-    // Pega os parâmetros UTM da URL atual
     const currentParams = new URLSearchParams(window.location.search);
-
-    // Adiciona (ou substitui) o parâmetro "produto"
     currentParams.set("produto", "pistola");
-
-    // Redireciona com os parâmetros completos
-    window.location.href = ${baseUrl}?${currentParams.toString()};
+    window.location.href = `${baseUrl}?${currentParams.toString()}`;
   });
 </script>
+
 
 
         <!------------------------------->
